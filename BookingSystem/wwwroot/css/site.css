@@ -1,0 +1,61 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/**************************************************************************************************************************/
+/************************************--------------------TOAST SYSTEM-------------------***********************************/
+/**************************************************************************************************************************/
+#toast-wrapper {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 103000;
+}
+
+.toast {
+    width: 250px;
+    opacity: .5;
+}
+
+.toast-success .close, .toast-error .close {
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.toast-success .toast-header {
+    background: #28a745;
+    color: white;
+}
+
+.toast-error .toast-header {
+    background: #dc3545;
+    color: white;
+}
+
+.toast-success .toast-body {
+    background: #28a745;
+    color: white;
+    opacity: .5;
+}
+
+.toast-error .toast-body {
+    background: #dc3545;
+    color: white;
+    opacity: .5;
+}
